@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="5dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="5dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/show_name"
+            style="@style/constants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_nickname"
+            style="@style/constants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_age"
+            style="@style/constants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_msg"
+            style="@style/constants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thank_you"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -15,17 +66,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/app_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-smallcaps"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:text="@string/title"
-                    android:textAlignment="center"
-                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/detail_name"
@@ -76,7 +116,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When is your Birthday?" />
+                    android:text="@string/when_birthday" />
 
                 <EditText
                     android:id="@+id/edit_birthday"
@@ -84,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Birthday"
+                    android:hint="@string/enter_birthday"
                     android:inputType="date" />
 
                 <TextView
@@ -92,7 +132,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your Course?" />
+                    android:text="@string/what_course" />
 
                 <EditText
                     android:id="@+id/edit_course"
@@ -100,7 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Course"
+                    android:hint="@string/enter_course"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -108,7 +148,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your Mobile Number?" />
+                    android:text="@string/what_mobile" />
 
                 <EditText
                     android:id="@+id/edit_phone"
@@ -116,7 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Mobile Number"
+                    android:hint="@string/enter_mobile_number"
                     android:inputType="phone" />
 
                 <TextView
@@ -124,7 +164,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your Favorite Color?" />
+                    android:text="@string/what_fave" />
 
                 <EditText
                     android:id="@+id/edit_color"
@@ -132,7 +172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Favorite Color"
+                    android:hint="@string/enter_favorite_color"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -140,7 +180,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your Ultimate Dream?" />
+                    android:text="@string/what_dream" />
 
                 <EditText
                     android:id="@+id/edit_dream"
@@ -148,7 +188,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Ultimate Dream"
+                    android:hint="@string/enter_ultimate_dream"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -156,7 +196,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Who is your Secret Crush?" />
+                    android:text="@string/who_crush" />
 
                 <EditText
                     android:id="@+id/edit_crush"
@@ -164,7 +204,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Secret Crush"
+                    android:hint="@string/enter_secret_crush"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -172,7 +212,7 @@
                     style="@style/constants"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your Message for Me?" />
+                    android:text="@string/what_message" />
 
                 <EditText
                     android:id="@+id/edit_message"
@@ -181,14 +221,20 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:hint="Enter Message"
+                    android:hint="@string/enter_message"
                     android:inputType="textMultiLine" />
 
                 <Button
                     android:id="@+id/done_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Done" />
+                    android:paddingStart="50dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/done" />
 
             </LinearLayout>
         </ScrollView>
