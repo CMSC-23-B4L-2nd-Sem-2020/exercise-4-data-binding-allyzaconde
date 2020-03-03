@@ -7,14 +7,16 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.databinding.DataBindingUtil
 import com.example.exer4_conde_b4l.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Allyza Conde")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
+        binding.myName = myName
         binding.doneButton.setOnClickListener{
             showData(it)
         }
@@ -47,8 +49,9 @@ class MainActivity : AppCompatActivity() {
 
             doneButton.visibility = View.GONE
 
-            showName.text = editName.text.toString()
-            showNickname.text = editNickname.text.toString()
+            myName?.name = editName.text.toString()
+            myName?.nickname = editNickname.text.toString()
+            invalidateAll()
             showAge.text = editAge.text.toString()
 
             showName.visibility = View.VISIBLE

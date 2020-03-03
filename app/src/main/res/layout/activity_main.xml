@@ -3,6 +3,12 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <data>
+        <variable
+            name="myName"
+            type="com.example.exer4_conde_b4l.MyName" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +33,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="36sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:text="@={myName.name}"/>
 
         <TextView
             android:id="@+id/show_nickname"
@@ -36,7 +43,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:text="@={myName.nickname}"/>
 
         <TextView
             android:id="@+id/show_age"
