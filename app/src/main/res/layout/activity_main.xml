@@ -4,8 +4,194 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/app_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/title"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    style="@style/constants"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/editBox"
+                    android:ems="10"
+                    android:hint="@string/enter_name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_nickname"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nickname" />
+
+                <EditText
+                    android:id="@+id/edit_nickname"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enter_nickname"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_age"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age" />
+
+                <EditText
+                    android:id="@+id/edit_age"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enter_age"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/detail_birthday"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When is your Birthday?" />
+
+                <EditText
+                    android:id="@+id/edit_birthday"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Birthday"
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/detail_course"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Course?" />
+
+                <EditText
+                    android:id="@+id/edit_course"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Course"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_mobileno"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Mobile Number?" />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/detail_color"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Favorite Color?" />
+
+                <EditText
+                    android:id="@+id/edit_color"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Favorite Color"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_dream"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Ultimate Dream?" />
+
+                <EditText
+                    android:id="@+id/edit_dream"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Ultimate Dream"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_crush"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Who is your Secret Crush?" />
+
+                <EditText
+                    android:id="@+id/edit_crush"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Secret Crush"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/detail_message"
+                    style="@style/constants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Message for Me?" />
+
+                <EditText
+                    android:id="@+id/edit_message"
+                    style="@style/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Enter Message"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/done_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Done" />
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 

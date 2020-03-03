@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">exer4_conde_b4l</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="name">Name:</string>
+    <string name="title">Input your details here!</string>
+    <string name="nickname">Nickname:</string>
+    <string name="enter_nickname">Enter Nickname</string>
+    <string name="age">Age:</string>
+    <string name="enter_age">Enter Age</string>
 </resources>
